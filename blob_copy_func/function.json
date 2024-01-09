@@ -1,0 +1,25 @@
+{
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "test/{name}",
+      "connection": "suselfuncapp2group88f1_STORAGE"
+    },
+    {
+      "name": "inputBlob",
+      "direction": "in",
+      "type": "blob",
+      "path": "test/{name}",
+      "connection": "suselfuncapp2group88f1_STORAGE"
+    },
+    {
+      "name": "outputBlob",
+      "path": "copy/{name}",
+      "connection": "suselfuncapp2group88f1_STORAGE",
+      "direction": "out",
+      "type": "blob"
+    }
+  ]
+}
